@@ -1,43 +1,35 @@
-// make some change here.
-
 size(500,500);
+stroke(0,180,255);
 
-stroke(0);
+// body
+fill(0,220,255);
+quad(150,250,250,150,350,250,250,350);
+arc(300,200,140,140,PI+PI/4,PI+PI+PI/4);
+arc(200,300,140,140,PI/4,PI+PI/4);
 
-colorMode(RGB);
-fill(0,0,230);
-ellipse(200,200,350,350); //face
+// wing1
+fill(0,170,255);
+arc(200,200,140,140,PI/4,PI+PI/4);
 
-fill(255);
-arc(200,200,350,175,PI,PI+PI);
-arc(200,200,350,350,0,PI);
-
-ellipse(150,100,100,125); //eyes
-ellipse(250,100,100,125);
+// wing2
 fill(0);
-ellipseMode(RADIUS); //eyes
-ellipse(170,120,20,30);
-ellipse(230,120,20,30);
-fill(255);
-ellipseMode(CENTER);
-ellipse(170,120,10,20);
-ellipse(230,120,10,20);
+quad(170,170,182,152,215,185,200,200);
 
-colorMode(RGB);
-fill(255,0,0);
-ellipse(200,160,40,40); //nose
-fill(255);
-ellipse(200,155,15,15);
+// eyes
+ellipse(330,170,20,20);
 
-arc(200,220,300,200,0,PI);
+// beak
+stroke(255,200,0);
+fill(255,200,0);
+triangle(360,180,440,200,360,220);
+arc(360,200,40,40,PI/2,PI+PI/2);
 
-line(200,180,200,320);
-
-line(150,220,25,210);
-line(250,220,375,210);
-
-line(150,200,30,150);
-line(250,200,370,150);
-
-line(150,240,25,270);
-line(250,240,375,270);
+// toriashi
+stroke(255,150,0);
+fill(255,150,0);
+rect(200,369,7,18);
+arc(230,400,70,25,PI,PI+PI);
+stroke(255,200,0);
+fill(255,200,0);
+rect(180,368,7,20);
+arc(200,400,70,25,PI,PI+PI);
